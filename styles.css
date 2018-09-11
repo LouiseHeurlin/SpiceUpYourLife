@@ -1,2 +1,110 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
 
-/* This file is where your CSS goes. When you start adding CSS, feel free to delete this comment */
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+
+img{
+  width: 800px;
+  image-orientation: center;
+  display: block;
+  padding: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+h3 {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+.greenText {
+  color: green;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  margin: 20px;
+  font-family: 'Roboto Slab', serif;
+}
+
+
+.heroImage {
+  background-image: url("./img/thomas-peham-688386-unsplash.jpg");
+  height: 500px;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.heroText {
+    text-align: center;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.columnImage {
+  float: left;
+  width: calc(33.33% - 4px);
+  padding: 2px;
+}
+
+.columnText{
+  float: left;
+  width: calc(50% - 4px);
+  padding: 2px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
