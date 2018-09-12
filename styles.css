@@ -34,7 +34,7 @@
 }
 
 
-img{
+img {
   width: 800px;
   image-orientation: center;
   display: block;
@@ -44,25 +44,24 @@ img{
 }
 
 
-
 h2 {
-  font-size: 50px;
-  text-align: center;
-  font-family: 'Roboto Slab', serif;
-}
-
-h3 {
   font-size: 40px;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 300px;
+  padding-right: 300px;
   font-family: 'Roboto Slab', serif;
 }
 
 .greenText {
   color: green;
   text-align: center;
-  padding: 20px;
   font-size: 20px;
-  margin: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 300px;
+  padding-right: 300px;
   font-family: 'Roboto Slab', serif;
 }
 
@@ -96,10 +95,11 @@ h3 {
   padding: 2px;
 }
 
-.columnText{
+.columnText {
   float: left;
-  width: calc(50% - 4px);
+  width: calc(80% - 4px);
   padding: 2px;
+  column-count: 2;
 }
 
 /* Clear floats after image containers */
@@ -107,4 +107,35 @@ h3 {
   content: "";
   clear: both;
   display: table;
+}
+
+
+.background {
+  background-color: #f2f2f2;
+  height: 600px;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.backgroundImage {
+  background-image: url("./img/luisa-azevedo-342842-unsplash.jpg");
+  height: 800px;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.textCenter {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 60px;
+  color: #2E1E25;
+  font-family: 'Roboto Slab', serif;
 }
