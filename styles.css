@@ -139,3 +139,8 @@ h2 {
   color: #2E1E25;
   font-family: 'Roboto Slab', serif;
 }
+
+.beachDiv {
+  width: 85%;
+  margin: 0 auto;
+}
